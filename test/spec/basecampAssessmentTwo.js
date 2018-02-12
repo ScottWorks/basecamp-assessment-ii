@@ -69,7 +69,7 @@ describe("evensOnly should return the correct numbers", function () {
 		expect(evensOnly).toEqual(jasmine.any(Function));
 	});
 	it("should return correct values", function () {
-		expect(evensOnly()).toEqual([4, 34, 88, 222]);
+		expect(evensOnly(myNumbers)).toEqual([4, 34, 88, 222]);
 	});
 });
 
@@ -81,7 +81,7 @@ describe("trueFriends should contain the correct people", function () {
 
 describe("indexFinder should return the indexes from the randomNumber array", function () {
 	it("indexes should exist and contain the correct values", function () {
-		expect(indexes).toBeDefined();
-		expect(indexes).toEqual([0,1,2,3,4,5,6,7])
+		expect(indexFinder).toBeDefined();
+		expect(indexFinder(randomNumbers)).toEqual([0,1,2,3,4,5,6,7])
 	});
 });
